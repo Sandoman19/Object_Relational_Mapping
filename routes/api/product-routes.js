@@ -25,6 +25,21 @@ router.post('/', (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
+  // TODO: is this needed?  
+  // Product.create({
+  //   product_name: req.body.product_name,
+  //   price: req.body.price,
+  //   stock: req.body.stock,
+  //   tagIds: req.body.tag_id
+  // })
+  //   .then((newProduct) => {
+  //     // Send the newly created row as a JSON object
+  //     res.json(newProduct);
+  //   })
+  //   .catch((err) => {
+  //     res.json(err);
+  //   });  
+
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
