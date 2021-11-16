@@ -4,19 +4,22 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint **/*.js --quiet; exit 0",
+    "test": "npm run lint",
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+    "url": "github.com/Sandoman19/Object_Relational_Mapping"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.27.0",
     "nodemon": "^2.0.3"
   },
   "dependencies": {

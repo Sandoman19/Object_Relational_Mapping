@@ -1,7 +1,7 @@
 // import important parts of sequelize library
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 // import our database connection from config.js
-const sequelize = require('../config/connection');
+const sequelize = require("../config/connection");
 
 // Initialize ProductTag model (table) by extending off Sequelize's Model class
 class ProductTag extends Model {}
@@ -21,16 +21,16 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Product',
-        key: 'id',      
+        model: "Product",
+        key: "id",
       },
     },
     // * `tag_id` * Integer * References the `Tag` model's `id`.
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Tag',
-        key: 'id',     
+        model: "Tag",
+        key: "id",
       },
     },
   },
@@ -39,7 +39,7 @@ ProductTag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: "product_tag",
   }
 );
 
