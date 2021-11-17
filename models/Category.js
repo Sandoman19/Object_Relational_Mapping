@@ -10,7 +10,7 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
-    //   * `id`  * Integer. * Doesn't allow null values. * Set as primary key. * Uses auto increment.
+    //  * `id`  * Integer. * Doesn't allow null values. * Set as primary key. * Uses auto increment.
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
