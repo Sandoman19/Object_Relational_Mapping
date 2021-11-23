@@ -14,11 +14,11 @@
 
 💻 Below is the gif showing the functionality of the application:
 
-![Start, Setup and GET all](./Video/Start%Setup%and%GET%all.mp4)
+![Start Setup and GET all](./Video/Start_Setup_and_GET_all.mp4)
 
-![GET by ID](./Video/GET%20by%20ID.mp4)
+![GET by ID](./Video/GET_20by_20ID.mp4)
 
-![PUT, POST and DELETE](./Video/PUT%POST%and%DELETE.mp4)
+![PUT POST and DELETE](./Video/PUT_POST_and_DELETE.mp4)
 
 ## User Story
 
